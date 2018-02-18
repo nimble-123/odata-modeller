@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  odata-modeller:
+    image: nlsltz/odata-modeller
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
